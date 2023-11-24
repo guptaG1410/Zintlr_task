@@ -5,6 +5,8 @@ export default {
     extend: {},
     colors: {
       purple: "#5551ff",
+      white: "#fff",
+      blue: "rgba(13,153,255,1)",
     },
   },
   plugins: [],
