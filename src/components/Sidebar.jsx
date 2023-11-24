@@ -66,7 +66,7 @@ const Sidebar = () => {
       </div>
       {Menus.map((menu) => {
         return (
-          <div key={menu.key} className="ml-2 mr-2">
+          <div key={menu.key} className="ml-2 mr-2 pb-1">
             {menu.key === "consumers" ? (
               <div className="text-base h-12 flex gap-2 items-center pl-4  rounded-full text-white bg-blue rounded-full cursor-pointer">
                 {menu.icon}
