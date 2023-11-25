@@ -37,18 +37,23 @@ const Header = () => {
           <BiNotification fontSize={30} />
           <FaRegBell fontSize={30} />
         </div>
-        <div className="flex items-center border p-4 rounded-xl ml-8">
+        <div className="h-12 flex items-center border p-4 rounded-xl">
           <span className="text-orange font-semibold ">Gold</span>
           <div className="ml-2 mr-2">
-            <p className="text-lime-500">0.34%</p>
+            <span className="text-sm">+0.34%</span>
           </div>
-          <div className="ml-3">
-            <p>Buy:$7300.00</p>
-            <p>Sell:$7300.00</p>
+          <div className="ml-3 text-sm">
+            <p>Buy: &#8377;7,390.00</p>
+            <p>Sell: &#8377;7,300.00</p>
           </div>
         </div>
-        <div className="w-20 ml-8">
-          <img className="rounded-full" src={img1} alt="1" />
+        <div class="relative mr-7">
+          <img
+            class="w-10 h-10 rounded-full ing-2 ring-gray-300 dark:ring-blue"
+            src={img1}
+            alt=""
+          />
+          <span class="top-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
         </div>
       </div>
     </div>
