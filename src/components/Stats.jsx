@@ -11,6 +11,8 @@ import {
 
 import ColumnChart from "../charts/ColumnChart";
 import LineChart from "../charts/LineChart";
+import HorizontalChart from '../charts/HorizontalChart'
+import VerticalChart from "../charts/VerticalChart";
 
 //data for the graph
 const series = [
@@ -27,14 +29,13 @@ const series = [
 const Stats = () => {
   return (
     <>
-      <div className="text-sm font-medium subpixel-antialiased mt-5">Consumers Overview</div>
-      <div className="overview-parent flex">
+      <div className="text-sm font-medium subpixel-antialiased mt-5">
+        Consumers Overview
+      </div>
+      <div className="overview-parent flex gap-1">
         <div className="overview-left w-2/3">
           <Flex justify="" className="">
-            <Col
-              className="items-center w-1/3 rounded bg-blue-100"
-              // style={{ background: "#e7dff4 " }}
-            >
+            <Col className="items-center w-1/3 rounded bg-blue-100">
               <Flex
                 direction="column"
                 justify="center"
@@ -147,12 +148,7 @@ const Stats = () => {
             </Card>
           </Flex>
 
-          <div
-          // className="border-2 "
-          // style={{
-          //   border: "2px solid green",
-          // }}
-          >
+          <div>
             <Flex>
               <Col span={12} className="flex mt-1 rounded-md bg-white">
                 <Flex
@@ -171,7 +167,6 @@ const Stats = () => {
                       defaultValue="Past Week"
                       style={{
                         width: "auto",
-                        // border:"1px solid black",
                         borderRadius: "6px",
                       }}
                       options={[
@@ -278,7 +273,6 @@ const Stats = () => {
                 <div className="flex flex-col">
                   <p className="text-xs text-right font-semibold">4,232 gm</p>
                   <Button
-                    // type="default"
                     className="text-xs p-0 rounded-full bg-white text-blue-800 font-semibold border-none pr-3 pl-3 mb-2"
                   >
                     ₹9332.5
@@ -286,7 +280,6 @@ const Stats = () => {
 
                   <p className="text-xs text-right font-semibold">4,232 gm</p>
                   <Button
-                    // type="default"
                     className="text-xs p-0 rounded-full bg-white text-blue-800 font-semibold border-none pr-3 pl-3"
                   >
                     ₹9323.5
@@ -294,6 +287,7 @@ const Stats = () => {
                 </div>
               </Col>
             </Flex>
+              <HorizontalChart/>
           </div>
         </div>
 
@@ -305,7 +299,6 @@ const Stats = () => {
                 defaultValue="Top 5"
                 style={{
                   width: "auto",
-                  // border:"1px solid black",
                   borderRadius: "6px",
                 }}
                 options={[
@@ -343,6 +336,7 @@ const Stats = () => {
             series={series}
             barColors={["#39A7FF", "#87C4FF"]}
           />
+          <VerticalChart/>
         </div>
       </div>
     </>

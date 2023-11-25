@@ -7,10 +7,8 @@ import {
   ExclamationCircleOutlined,
   ThunderboltOutlined,
 } from "@ant-design/icons";
-
+import { Link } from "react-router-dom";
 import consumerIcon from "../assets/Consumers.jpg";
-
-// import { Link } from "react-router-dom";
 
 const Consumer = () => {
   return (
@@ -34,9 +32,11 @@ const Consumer = () => {
                   Add{" "}
                 </Button>
 
-                <Button type="default" className="bg-white mr-2 ml-2">
-                  <SettingOutlined /> Manage Consumers
-                </Button>
+                <Link to='/manage-consumers'>
+                  <Button type="default" className="bg-white mr-2 ml-2">
+                    <SettingOutlined /> Manage Consumers
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className="flex items-center justify-center">

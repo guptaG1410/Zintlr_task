@@ -4,7 +4,7 @@ import { FaSackDollar } from "react-icons/fa6";
 import { AiTwotoneFolderOpen } from "react-icons/ai";
 import { FaRegBell } from "react-icons/fa";
 import { BiNotification } from "react-icons/bi";
-import img1 from "../assets/img1.jpg";
+import avatar from "../assets/avatar.png";
 
 const Header = () => {
   return (
@@ -50,7 +50,7 @@ const Header = () => {
         <div class="relative mr-7">
           <img
             class="w-10 h-10 rounded-full ing-2 ring-gray-300 dark:ring-blue"
-            src={img1}
+            src={avatar}
             alt=""
           />
           <span class="top-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
