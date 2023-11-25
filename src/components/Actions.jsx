@@ -198,16 +198,26 @@ const Actions = () => {
         </Card>
       </div>
       <div className="pl-12 mt-2">
-        <p className="text-neutral-950 text-xl">Customer Overview</p>
-        <div className="flex items-center bg-slate-100 rounded-md border border-sky-500 py-2 pl-4 pr-10 h-9 w-72 mt-2 ">
-          <input
-            className="focus:outline-none bg-slate-100 w-64"
-            type="text"
-            placeholder="Search Consumers"
-          ></input>
-          <span>
-            <SearchOutlined />
-          </span>
+        <p className="text-neutral-950 text-xl">Consumer Overview</p>
+        <div className="flex items-center rounded-full py-2 pl-4 pr-20 mr-32">
+          <form class="flex items-center">
+            <label for="simple-search" class="sr-only">
+              Search
+            </label>
+            <div class="relative w-full">
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                <span>
+                  <SearchOutlined />
+                </span>
+              </div>
+              <input
+                type="text"
+                id="simple-search"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search Consumers"
+              />
+            </div>
+          </form>
         </div>
         <div className="mt-2">
           <table>

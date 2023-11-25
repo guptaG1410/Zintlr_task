@@ -60,7 +60,7 @@ const Sidebar = () => {
 
   return (
     <div className="h-full flex flex-col fixed">
-      <div className="flex items-center mt-5 ml-7 mb-8 cursor-pointer">
+      <div className="flex items-center mt-3 ml-7 mb-8 cursor-pointer">
         <img src={logo} className="w-8" alt="logo" />
         <span className="text-xl text-purple">ZINTLR</span>
       </div>
@@ -81,6 +81,27 @@ const Sidebar = () => {
           </div>
         );
       })}
+      <div className="p-2">
+        <h3 className="mx-3"> Your Stock</h3>
+        <div className="stock-1 p-3 text-xs border-blue rounded-lg bg-blue-200">
+          <div className="tru-gold whitespace-nowrap ">
+            <p className="flex">
+              TrueCoin <span className="text-red-500">Gold </span>
+              <span className="mx-3 whitespace-nowrap ">7.3k gm</span>
+            </p>
+
+            <p className="text-green-500">6.18(+2.26%)</p>
+          </div>
+          <div className="tru-gold whitespace-nowrap mt-2 ">
+            <p className="flex">
+              TrueCoin <span className="text-red-500">Silver </span>
+              <span className="mx-3 whitespace-nowrap ">7.3k gm</span>
+            </p>
+
+            <p className="text-green-500">6.18(+56%)</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
